@@ -28,8 +28,8 @@ Requirements
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 * For Android versions Pie and above support for http urls is disabled by default by Google. You must either use https urls or else explicitly allow CLEARTEXT in your application. You can do so in several ways.
-    * Follow this guide to add support for CLEARTEXT Urls in your application: http://www.douevencode.com/articles/2018-07/cleartext-communication-not-permitted/
-    * You may also add this line 'android:usesCleartextTraffic="true"' (without single-quotes) to your application tag in your AndroidManifest.xml file to allow CLEARTEXT Urls such as:
+-> Follow this guide to add support for CLEARTEXT Urls in your application: http://www.douevencode.com/articles/2018-07/cleartext-communication-not-permitted/
+-> You may also add this line 'android:usesCleartextTraffic="true"' (without single-quotes) to your application tag in your AndroidManifest.xml file to allow CLEARTEXT Urls such as:
 ::
     ...
     <application
@@ -38,7 +38,6 @@ Requirements
         ...>
         ...
     </application>
-    ...
 
 Installation
 ============
