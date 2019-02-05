@@ -8,12 +8,13 @@ Features
 * Supports http get method
 * Supports more secure http post method
 * Supports sending Files to the server by making use of MultiPartBody
+* Has built-in functions to convert your result String into 2D ArrayList o JSONArray object.
 * Exception handling present along with log inputs for developers to fix issues while using the library in their application
 * Fully written in Kotlin
 
 To-Do list
 ==========
-* Adding a built-in method to convert json string into ArrayList for easier usage.
+* Adding a built-in method to convert json string into ArrayList for easier usage. [Done]
 
 Credits
 =======
@@ -95,7 +96,11 @@ For using the http GET method with pre-built url:
     val asyncResponse = object : AsyncResponse {
         override fun processFinish(response: String) {
             // Your code here for whatever you want to do with the response.
-            printOutput(response)
+            val attributes = arrayOf("num1", "num2", "file")
+            val obj = StringToArray()
+            // This will either return a 2D ArrayList or null if there is any error.
+            val data = obj.convertDataStringToArrayList(response, attributes)
+            if (data != null) { ... }
         }
     }
 
