@@ -54,7 +54,7 @@ In your applicationModule(app)/build.gradle add the SAM library as a dependency:
 ::
   dependencies {
     ...
-    implementation 'com.github.arnabJ:Android-ServerAccessManager:1.0.0'
+    implementation 'com.github.arnabJ:Android-ServerAccessManager:1.2.0'
   }
 
 Sync project, clean and re-build. You can use the SAM library as part of your project now.
